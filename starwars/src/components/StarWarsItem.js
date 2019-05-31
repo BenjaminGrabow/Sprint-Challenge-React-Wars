@@ -6,10 +6,10 @@ const StarWarsItem = props => {
                 <div>
                         <ul className="starwars-list">
                                 <h1>{props.name}</h1>
-                                <li>{props.gender}</li>
-                                <li>{props.birthday}</li>
-                                <li>{props.height}</li>
-                                <li>{props.hairColor}</li>
+                                <li>{`Gender:${props.gender}`}</li>
+                                <li>{`Birth year:${props.birthday}`}</li>
+                                <li>{`Height:${props.height}`}</li>
+                                <li>{`Hair color:${props.hairColor}`}</li>
                         </ul>
                 </div>
         )
