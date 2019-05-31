@@ -1,6 +1,7 @@
 import React from 'react';
 import "./StarWars.css";
 import StarWarsItem from "./StarWarsItem";
+import uuid from 'uuid';
 
 const StarWarsList = props => {
         return (
@@ -12,7 +13,7 @@ const StarWarsList = props => {
                                         birthday={val.birth_year}
                                         height={val.height}
                                         hairColor={val.hair_color}
-                                        key={val.height}
+                                        key={uuid()}
                                 ></StarWarsItem>
                         )}
                 </div>
