@@ -3,16 +3,16 @@ import "./StarWars.css";
 import StarWarsItem from "./StarWarsItem";
 
 const StarWarsList = props => {
-        return(
+        return (
                 <div className="star-container">
-                        {props.starWarsState.map(val => 
+                        {props.starWarsState.map(val =>
                                 <StarWarsItem
-                                name={val.name}
-                                gender={val.gender}
-                                birthday={val.birth_year}
-                                height={val.height}
-                                hairColor={val.hair_color}
-                                key={val.height}
+                                        name={val.name}
+                                        gender={val.gender}
+                                        birthday={val.birth_year}
+                                        height={val.height}
+                                        hairColor={val.hair_color}
+                                        key={val.height}
                                 ></StarWarsItem>
                         )}
                 </div>
